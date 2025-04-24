@@ -1,0 +1,81 @@
+.post-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+}
+
+.post-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.post-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+  /* Allow title to take up to 3 lines in this layout */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-body {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  /* Can show more content in single column layout */
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #888;
+}
+
+.post-read-more {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.post-read-more:hover {
+  background-color: #3a7bc8;
+}
+
+.post-item-empty {
+  text-align: center;
+  color: #888;
+  padding: 24px;
+  font-style: italic;
+  width: 100%;
+} 
